@@ -1,0 +1,23 @@
+﻿<Window x:Class="RevitAPI51.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPI51"
+             mc:Ignorable="d" 
+             Height="150" Width="300">
+    <StackPanel>
+        <Label Content="Выбор функции"
+               Margin="5"/>
+        <Button Content="Узнать количество труб"
+                Command="{Binding ShowPipesCommand}"
+                Margin="5"/>
+        <Button Content="Узнать объем всех стен"
+                Command="{Binding ShowWallVolumeCommand}"
+                Margin="5"/>
+        <Button Content="Узнать количество дверей"
+                Command="{Binding ShowDoorsCommand}"
+                Margin="5"/>
+        
+    </StackPanel>
+</Window>
